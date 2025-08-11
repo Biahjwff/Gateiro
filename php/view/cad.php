@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Gato</title>
+    <title>Cadastro Gato Cósmico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+    </style>
 </head>
-<body>
-    <form action="../controller/controller_gato.php" method="post">
-        <input type="text" name="nome" id="nome" placeholder="nome">
-        <input type="text" name="raca" id="raca" placeholder="raca">
-        <input type="text" name="sexo" id="sexo" placeholder="sexo">
-        <input type="date" name="nascimento" id="nascimento" placeholder="nascimento">
-        <label for="castracao">Castrado(a)?</label>
-        <input type="checkbox" name="castracao" id="castracao" value="true">
+<body class="bg-slate-950 text-slate-100 flex flex-col items-center justify-center min-h-screen p-4 font-['Orbitron']">
 
-        <label for="adocao">Adotado(a)?</label>
-        <input type="checkbox" name="adocao" id="adocao" value="true">
+    <div class="w-full max-w-xl bg-slate-900 border border-purple-500 rounded-2xl shadow-2xl shadow-purple-500/50 p-8 md:p-12 transform transition-transform duration-500">
+        <h1 class="text-3xl md:text-4xl font-bold text-purple-400 mb-8 text-center tracking-widest leading-tight">
+            Cadastro de Gato
+        </h1>
 
-        <button type="submit" name="acao" value="salvar">Cadastrar</button>
-    </form>
+        <form action="../controller/controller_gato.php" method="post" class="space-y-6">
+
+            <div>
+                <input type="text" name="nome" id="nome" placeholder="Nome Cósmico"
+                    class="w-full px-4 py-3 bg-slate-800 text-sky-300 border border-purple-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400 placeholder-purple-400 transition-colors duration-300">
+            </div>
+
+            <div>
+                <input type="text" name="raca" id="raca" placeholder="Raça Estelar"
+                    class="w-full px-4 py-3 bg-slate-800 text-sky-300 border border-purple-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400 placeholder-purple-400 transition-colors duration-300">
+            </div>
+
+            <div>
+                <input type="text" name="sexo" id="sexo" placeholder="Sexo Robotico"
+                    class="w-full px-4 py-3 bg-slate-800 text-sky-300 border border-purple-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400 placeholder-purple-400 transition-colors duration-300">
+            </div>
+            
+            <div>
+                <input type="date" name="nascimento" id="nascimento"
+                    class="w-full px-4 py-3 bg-slate-800 text-sky-300 border border-purple-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400 transition-colors duration-300">
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <input type="checkbox" name="castracao" id="castracao" value="true"
+                    class="w-5 h-5 text-sky-400 bg-slate-800 border-purple-600 rounded focus:ring-sky-400 transition-colors duration-300">
+                <label for="castracao" class="text-sky-300 text-lg">Castrado(a)?</label>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <input type="checkbox" name="adocao" id="adocao" value="true"
+                    class="w-5 h-5 text-sky-400 bg-slate-800 border-purple-600 rounded focus:ring-sky-400 transition-colors duration-300">
+                <label for="adocao" class="text-sky-300 text-lg">Adotado(a)?</label>
+            </div>
+
+            <button type="submit" name="acao" value="salvar"
+                class="w-full px-8 py-3 text-lg font-bold text-purple-950 bg-sky-400 rounded-full shadow-lg shadow-sky-400/50 uppercase tracking-wide
+                transition-all duration-300 ease-in-out
+                hover:bg-sky-200 hover:text-purple-900 hover:shadow-sky-300/70
+                transform hover:-translate-y-1">
+                Cadastrar Gato Cósmico
+            </button>
+        </form>
+    </div>
+
 </body>
 </html>
