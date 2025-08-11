@@ -1,0 +1,46 @@
+services:
+  php_gateiro:
+    container_name: php_gateiro
+    build: ./php
+    restart: unless-stopped
+    volumes:
+      - ./php:/var/www/gateiro
+    ports:
+      - 9000:9000
+    networks:
+      gateiro:
+        ipv4_address: 192.168.8.2
+    
+  nginx_gateiro:
+    container_name: nginx_gateiro
+    image: nginx:1.25
+    restart: unless-stopped
+    volumes:
+      - ./php:/var/www/gateiro
+      - ./nginx:/etc/nginx/conf.d 
+    depends_on:
+      - php_gateiro
+    networks:
+      gateiro:
+        ipv4_address: 192.168.8.3
+    ports:
+      - 800:80
+
+  mongo:
+    image: mongo:4.4
+    container_name: mongo_gateiro
+    restart: always
+    networks:
+      gateiro:
+        ipv4_address: 192.168.8.4
+    command: ["--noauth"]
+
+
+networks:
+  gateiro:
+    name: gateiro
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.8.0/24
+
