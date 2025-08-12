@@ -1,8 +1,9 @@
 # Gateiro
 
-![Logo do Projeto](./img/Logo_Gateiro.png) 
-Bem-vindo ao **Gateiro**! Este é um sistema simples para gerenciar gatos disponíveis para adoção, desenvolvido como trabalho prático para a disciplina de Desenvolvimento Web do curso técnico de Informática para Internet no IFC.
 
+Bem-vindo ao **Gateiro**! Este é um sistema simples para gerenciar gatos disponíveis para adoção, desenvolvido como trabalho prático para a disciplina de  Desenvolvimento Web do curso técnico de  Informática para Internet no IFC. 
+
+![Logo do Projeto](./img/Logo_Gateiro.png) 
 ## Funcionalidades
 
 Este projeto permite aos usuários:
