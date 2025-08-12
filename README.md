@@ -1,7 +1,6 @@
 # Gateiro
 
-![Logo do Projeto](./img/Logo_Gateiro.png)
-
+![Logo do Projeto](./img/Logo_Gateiro.png) 
 Bem-vindo ao **Gateiro**! Este é um sistema simples para gerenciar gatos disponíveis para adoção, desenvolvido como trabalho prático para a disciplina de Desenvolvimento Web do curso técnico de Informática para Internet no IFC.
 
 ## Funcionalidades
@@ -26,9 +25,9 @@ O projeto foi construído utilizando as seguintes tecnologias, todas rodando em 
 
 Veja abaixo uma captura de tela do sistema em funcionamento:
 
-![Captura de Tela do Sistema](./img/Cadastro_Gateiro.png)
+![Captura de Tela do Sistema](./img/Cadastro_gateiro.png)
 
-## Como Rodar o Projeto
+## Como Rodar o Projeto no Linux
 
 Siga estes passos para configurar e executar o projeto na sua máquina local:
 
@@ -50,9 +49,5 @@ Contribuições são sempre bem-vindas! Se você encontrar um bug ou tiver uma s
 
 ## Autor
 
-**Bianca Jussara Wolff** - [Link para seu GitHub](https://github.com/Biahjwff)
+**Bianca Jussara Wolff** - (https://github.com/Biahjwff)
 *Estudante de Informática para Internet no IFC.*
-
-## Licença
-
-Este projeto está licenciado sob a licença [MIT](https://opensource.org/licenses/MIT) - veja o arquivo `LICENSE` para mais detalhes.
